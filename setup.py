@@ -8,7 +8,7 @@ setup(
     description='A Python implementation of a singly linked list',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/ahmedkmadani/linked-list',
+    url='https://github.com/ahmedkmadani/single-linked-list',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
