@@ -13,7 +13,7 @@ This is a Python implementation of a singly linked list.
 Install the `SingleLinkedList` package from PyPI using `pip`:
 
 ```bash
-pip install single-linked-list==0.0.1
+pip install single-linked-list==0.0.2
 ````
 
 then, import the `SingleLinkedList` class
