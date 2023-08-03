@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="single-linked-list",
-    version="0.0.2",
+    version="0.0.3",
     author="Ahmed K. Madani",
     author_email="ahmedk.madani@outlook.com",
     description="A Python implementation of a singly linked list",
