@@ -13,19 +13,21 @@ This is a Python implementation of a singly linked list.
 Install the `SingleLinkedList` package from PyPI using `pip`:
 
 ```bash
-pip install single-linked-list==0.0.2
+pip install single-linked-list==0.0.3
 ````
 
-then, import the `SingleLinkedList` class
+then, import the `SingleLinkedList` class or `CicruleSingeLinkedList`
 
 ```python
 from slll.slll import SingleLinkedList
+from slll.csll import CicruleSingeLinkedList
 ```
 
 Initialize a Singly Linked List
 
 ```python
 single_linked_list = SingleLinkedList()
+cicrule_single_list = CicruleSingeLinkedList()
 ```
 
 ## Methods
@@ -40,31 +42,35 @@ single_linked_list = SingleLinkedList()
 ```python
 single_linked_list.append(1)
 single_linked_list.append(2)
+cicrule_single_list.append(1)
+cicrule_single_list.append(2)
 ```
 
 ### * Preappend
 - inserts a new node at the beginning of the linked list.
 
 #### Method: 
-- preappend(data)
+- pre_append(data)
 
 `data(any)` : The data to be stored in the new node.
 
 ```python
-single_linked_list.preappend(0)
+single_linked_list.pre_append(0)
+cicrule_single_list.pre_append(0)
 ```
 
 ### * Insert
 - inserts a new node at the specified index in the linked list.
 
 #### Method: 
-- insert(index, data)
+- insert(data, index)
 
 `index(int)` : The index where the new node should be inserted.
 `data(any)` : The data to be stored in the new node.
 
 ```python
 single_linked_list.insert(2, 3)
+cicrule_single_list.insert(2, 3)
 ```
 
 ### * Find
@@ -77,6 +83,7 @@ single_linked_list.insert(2, 3)
 
 ```python
 index = single_linked_list.find(2)
+index = cicrule_single_list.find(2)
 print(index)  # Output: 1
 ```
 
@@ -90,6 +97,7 @@ print(index)  # Output: 1
 
 ```python
 node = single_linked_list.get(2)
+node = cicrule_single_list.get(2)
 print(node.data)  # Output: 3
 ```
 
@@ -104,6 +112,7 @@ print(node.data)  # Output: 3
 
 ```python
 single_linked_list.set(0, 9000)
+cicrule_single_list.set(0, 9000)
 ```
 
 ### * Pop
@@ -114,6 +123,7 @@ single_linked_list.set(0, 9000)
 
 ```python
 last_node = single_linked_list.pop()
+last_node = cicrule_single_list.pop()
 print(last_node)  # Output: 3
 ```
 
@@ -125,6 +135,7 @@ print(last_node)  # Output: 3
 
 ```python
 first_node = single_linked_list.pop_first()
+first_node = cicrule_single_list.pop_first()
 print(first_node)  # Output: 0
 ```
 
@@ -138,6 +149,7 @@ print(first_node)  # Output: 0
 
 ```python
 single_linked_list.remove(2)
+cicrule_single_list.remove(2)
 ```
 
 ### * Clear
@@ -148,6 +160,7 @@ single_linked_list.remove(2)
 
 ```python
 single_linked_list.clear()
+cicrule_single_list.clear()
 ```
 
 ### * Get Length
@@ -158,6 +171,7 @@ single_linked_list.clear()
 
 ```python
 length = len(single_linked_list)
+length = len(cicrule_single_list)
 print(length)  # Output: 1
 ```
 
@@ -169,6 +183,7 @@ print(length)  # Output: 1
 
 ```python
 single_linked_list.traverse()
+cicrule_single_list.traverse()
 # Output: 0 -> 1 -> 3
 ``` 
 
